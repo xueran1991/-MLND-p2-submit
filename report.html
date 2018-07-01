@@ -11813,7 +11813,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 为这个项目导入需要的库</span>
@@ -11931,7 +11931,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO：总的记录数</span>
@@ -11992,7 +11992,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 将数据切分成特征和对应的标签</span>
@@ -12017,7 +12017,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 可视化 &#39;capital-gain&#39;和&#39;capital-loss&#39; 两个特征</span>
@@ -12063,7 +12063,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 对于倾斜的数据使用Log转换</span>
@@ -12113,7 +12113,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">MinMaxScaler</span>
@@ -12255,7 +12255,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO：使用pandas.get_dummies()对&#39;features_raw&#39;数据进行独热编码</span>
@@ -12307,7 +12307,7 @@ Percentage of individuals making more than $50,000: 24.78%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 导入 train_test_split</span>
@@ -12384,13 +12384,13 @@ Testing set has 9045 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#不能使用scikit-learn，你需要根据公式自己实现相关计算。</span>
 
 <span class="c1">#TODO： 计算准确率 =预测准确的比例</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_val</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">y_val</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">/</span> <span class="n">y_val</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">y_val</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">y_val</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># TODO： 计算查准率 Precision = 预测为真中，实际为真的比例</span>
 <span class="n">precision</span> <span class="o">=</span> <span class="n">y_val</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">y_val</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -12425,7 +12425,7 @@ Testing set has 9045 samples.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Naive Predictor on validation data: 
-     Accuracy score: 0.7522 
+     Accuracy score: 0.2478 
      Precision: 0.2478 
      Recall: 1.0000 
      F-score: 0.2917
@@ -12501,9 +12501,9 @@ Testing set has 9045 samples.
 <p><strong>描述一个该模型在真实世界的一个应用场景。（你需要为此做点研究，并给出你的引用出处）</strong></p>
 <p>回答：Yahoo搜索引擎的网页搜索排名。(<a href="https://en.wikipedia.org/wiki/Gradient_boosting#">引用自维基百科：Gradient boosting</a>)</p>
 <p><strong>这个模型的优势是什么？他什么情况下表现最好？</strong></p>
-<p>回答：算法准确度较高。</p>
+<p>回答：相对于其他模型，该模型准确度较高。在工业界应用广泛，并且有性能更强劲、运算速度更快的优化模型出现，可以输出特征重要性，适合处理大规模数据。</p>
 <p><strong>这个模型的缺点是什么？什么条件下它表现很差？</strong></p>
-<p>回答：</p>
+<p>回答：不能进行批训练或者增量训练；高维稀疏特征下不如LR的泛化能力好，比如CTR预估等场景中。</p>
 <p><strong>根据我们当前数据集的特点，为什么这个模型适合这个问题。</strong></p>
 <p>回答：该模型应用广泛，有较高的准确度。</p>
 
@@ -12737,7 +12737,7 @@ GradientBoostingClassifier trained on 28941 samples.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答： </strong></p>
-<p>该模型分阶段运行，首选选用一个性能较弱的分类器，这个弱分类器只需要比随机分类略好即可，当然这样的分类器会有较大的误差，为了降低误差需要在这个弱分类器上的基础上建立一个新的分类器，这个新的分类器的误差比前者要小。迭代这样的过程，直到误差不会再小即找到最小误差，这样我们就组合出了一个性能很强的分类器，这就是训练这个模型的最终结果。</p>
+<p>梯度提升算法是通过对弱分类器不断进行优化进而获得一个强分类器的方法。首先选取一个初始的弱分类器，这个分类器的性能只要比随机选取结果好就可以。使用这个弱分类器对训练数据进行预测，预测值会和真实值存在偏差，我们称之为残差，我们使用残差作为下一阶段弱分类器的输入。同时我们构造一个损失函数，每一个阶段训练弱分类器时都要使这个损失函数向减小的方向调整。这样我们迭代我们的模型，直到使损失函数最小，从而获得一个强分类器。</p>
 
 </div>
 </div>
